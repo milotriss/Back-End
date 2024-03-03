@@ -1,0 +1,180 @@
+.app {
+    width: 100vw;
+    height: 100vh;
+}
+.app header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000;
+    padding: 30px 0;
+}
+.app header h1 {
+    color: #fff;
+    font-size: 60px;
+}
+.app header .appAction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+.app header .appAction button {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    width: 25%;
+    font-size: 16px;
+}
+.app header .appAction button:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.app header .appAction input {
+    border: 1px solid #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 70%;
+    font-size: 16px;
+}
+
+
+.app main {
+    width: 100%;
+    padding: 100px 300px;
+}
+.app main table {
+    width: 100%;
+    max-height: 700px;
+}
+.app main table thead {
+    font-size: 25px;
+}
+.app main table thead th:not(:last-child) {
+    text-align: start;
+}
+.app main table thead th {
+    line-height: 100px;
+}
+.app main table tbody tr td {
+    font-size: 20px;
+    font-weight: 300px;
+} 
+.app main table tbody tr .tableActions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.app main table tbody tr .tableActions button {
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+.app main table tbody tr .tableActions button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+.app footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.app footer span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+}
+.app footer span:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+/* modal */
+.modalOverlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modalOverlay .modal {
+    width: 600px;
+    height: 900px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.9);
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-direction: column;
+    padding: 30px;
+}
+.modalOverlay .modal h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.modalOverlay .modal input {
+    border: 1px solid #000;
+    padding: 15px 20px;
+    border-radius: 5px;
+    width: 70%;
+    font-size: 16px;
+}
+.modalOverlay .modal select {
+    width: 50%;
+    text-align: center;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+}
+.modalOverlay .modal button {
+    height: 5%;
+    width: 70%;
+    margin-top: 30px;
+    background-color: #000;
+    font-size: 18px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #fff;
+}
+.modalOverlay .modal button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.icon {
+    margin-right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: grey;
+    transition: 0.1s;
+}
+.icon:hover {
+    color: #000;
+    transform: scale(1.1);
+}
